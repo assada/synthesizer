@@ -1,0 +1,424 @@
+#N canvas 0 23 1440 855 12;
+#X obj 176 352 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 176 372 \; pd dsp \$1;
+#X obj 74 434 dac~ 1 2;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array oscil 2000 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 3 2000 -3 200 400 1 0 0;
+#X restore 7 -183 graph;
+#X obj 7 222 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 7 242 metro 50;
+#X obj 7 266 tabwrite~ oscil;
+#X obj 492 164 hsl 128 15 300 500 0 0 empty empty empty -2 8 0 10 -204786
+-1 -1 0 1;
+#X floatatom 496 183 5 0 0 1 Freq - -;
+#X obj 161 431 env~;
+#X obj 161 459 - 100;
+#X obj 114 483 vu 15 120 R empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 12 430 env~;
+#X obj 12 458 - 100;
+#X obj 61 482 vu 15 120 R empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 709 544 *~;
+#X obj 677 568 s~ ls;
+#X obj 725 568 s~ rs;
+#X obj 65 339 r~ ls;
+#X obj 118 340 r~ rs;
+#X obj 62 366 *~ 0.1;
+#X obj 114 366 *~ 0.1;
+#X obj 406 368 osc~ 2;
+#X obj 459 368 phasor~ 2;
+#X obj 533 392 expr~ $v1 > $v2;
+#X obj 607 368 / 100;
+#X obj 786 165 hsl 128 15 0 100 0 0 empty empty empty -2 -8 0 10 -204786
+-1 -1 0 1;
+#X floatatom 783 187 5 0 0 1 Gate - -;
+#X msg 383 312 0;
+#X obj 488 144 hradio 15 1 1 3 empty empty Wave_form 0 -8 0 10 -204786
+-1 -1 1;
+#X obj 383 287 t b b;
+#X floatatom 406 344 5 0 0 0 - - -;
+#X floatatom 459 344 5 0 0 0 - - -;
+#X floatatom 533 342 5 0 0 0 - - -;
+#X obj 427 312 route 0 1 2;
+#X obj 427 287 \$1 \$2;
+#X obj 471 287 t b b;
+#X obj 637 164 hsl 128 15 0 10 0 0 empty empty empty -2 -8 0 10 -203904
+-1 -1 300 1;
+#X floatatom 640 186 5 0 0 1 LP - -;
+#X obj 663 391 * 1000;
+#X obj 533 367 phasor~ 0;
+#X obj 504 468 hip~;
+#X obj 637 110 hsl 128 15 0 100 0 0 empty empty empty -2 -8 0 10 -232576
+-1 -1 5700 1;
+#X floatatom 641 134 5 0 0 1 HP - -;
+#X obj 426 -58 mtof;
+#X obj 304 -255 hradio 15 1 0 12 empty empty Note 0 -8 0 10 -228856
+-1 -1 -1;
+#X msg 329 -46 0;
+#X obj 220 -313 metro 100;
+#X obj 220 -333 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 506 443 bob~;
+#X obj 637 211 hsl 128 15 0 10 0 0 empty empty empty -2 -8 0 10 -203904
+-1 -1 1800 1;
+#X floatatom 640 233 5 0 0 1 LP_Reso - -;
+#X obj 329 -70 loadbang;
+#X msg 238 -174 0;
+#X obj 544 -342 vradio 15 1 0 9 empty empty Octave 0 -8 0 10 -228856
+-1 -1 3;
+#X floatatom 507 -45 5 0 0 1 Midi - -;
+#X obj 427 -83 + \$1;
+#X obj 693 -85 * 12;
+#X obj 624 -275 t b b;
+#X obj 265 -73 line;
+#X obj 426 -34 s freqG;
+#X obj 265 -121 r freqG;
+#X obj 265 -50 s freq;
+#X msg 265 -97 \$1 1000;
+#X msg 273 -174 1;
+#X msg 307 -174 2;
+#X msg 343 -173 3;
+#X msg 382 -173 4;
+#X msg 421 -172 5;
+#X msg 460 -172 6;
+#X msg 501 -173 7;
+#X msg 541 -171 8;
+#X msg 580 -169 9;
+#X msg 617 -168 10;
+#X msg 656 -169 11;
+#X floatatom 888 -196 5 0 0 0 - - -;
+#X obj 918 -251 keyup;
+#X msg 918 -226 0;
+#X obj 1004 -94 s keynote;
+#X obj 303 -300 r keynote;
+#X obj 220 -290 random 12;
+#X msg 802 -132 0;
+#X msg 844 -132 1;
+#X msg 883 -132 2;
+#X msg 926 -131 3;
+#X msg 965 -131 4;
+#X msg 1004 -130 5;
+#X msg 1043 -130 6;
+#X msg 1084 -131 7;
+#X msg 1124 -129 8;
+#X msg 1163 -127 9;
+#X msg 1200 -126 10;
+#X msg 1239 -127 11;
+#X obj 888 -170 sel 97 119 115 101 100 102 116 103 121 104 117 106
+0;
+#X msg 1277 -127 -1;
+#X obj 382 256 r freqG;
+#X obj 304 -228 sel 0 1 2 3 4 5 6 7 8 9 10 11 -1;
+#X obj 340 -20 line;
+#X obj 888 -226 key;
+#X obj 524 496 rev2~, f 9;
+#X obj 506 527 +~;
+#X obj 1090 111 vsl 15 128 0 100 0 0 empty empty empty 0 -9 0 10 -261682
+-1 -1 0 1;
+#X floatatom 1090 253 5 0 0 0 - - -;
+#X obj 1135 111 vsl 15 128 0 300 0 0 empty empty empty 0 -9 0 10 -261682
+-1 -1 0 1;
+#X floatatom 1135 252 5 0 0 0 - - -;
+#X obj 1180 111 vsl 15 128 0 300 0 0 empty empty empty 0 -9 0 10 -261682
+-1 -1 1200 1;
+#X floatatom 1180 252 5 0 0 0 - - -;
+#X obj 601 443 * 1000;
+#X obj 1226 110 vsl 15 128 0 300 0 0 empty empty empty 0 -9 0 10 -261682
+-1 -1 6100 1;
+#X floatatom 1226 253 5 0 0 0 - - -;
+#X msg 770 -70 \$1;
+#X obj 733 -189 sel 122 120;
+#X msg 773 -160 -1;
+#X obj 734 -133 +;
+#X floatatom 770 -102 5 0 0 0 - - -;
+#X obj 770 -132 i;
+#X msg 733 -161 1;
+#X obj 735 479 vline~;
+#X obj 952 112 vsl 15 128 0 3000 0 0 empty empty empty 0 -9 0 10 -261234
+-1 -1 4300 1;
+#X obj 971 112 vsl 15 128 0 1000 0 0 empty empty empty 0 -9 0 10 -261234
+-1 -1 5600 1;
+#X obj 990 112 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -261234
+-1 -1 3900 1;
+#X obj 1019 112 vsl 15 128 0 1000 0 0 empty empty empty 0 -9 0 10 -261234
+-1 -1 5800 1;
+#X floatatom 909 253 5 0 0 3 A - -;
+#X floatatom 954 253 5 0 0 3 D - -;
+#X floatatom 999 253 5 0 0 3 S - -;
+#X floatatom 1045 253 5 0 0 3 R - -;
+#X obj 705 326 pack f f f f;
+#X msg 705 353 1 \$2 \, \$4 \$3 \$2;
+#X obj 1007 -210 s keyupp;
+#X obj 736 378 r keyupp;
+#X msg 735 442 0 \$2;
+#X obj 735 409 pack b f;
+#X obj 613 83 cnv 15 180 16 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X text 658 82 Filter Section;
+#X obj 291 -335 cnv 15 210 16 empty empty empty 20 12 0 14 -262130
+-66577 0;
+#X text 306 -336 MIDI Playback and Control;
+#X text 1160 79 comment;
+#X obj 1084 83 cnv 15 180 16 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X text 1129 82 Reverb Section;
+#X text 971 80 comment;
+#X obj 895 84 cnv 15 180 16 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X text 940 83 Envelope Section;
+#X obj 24 310 cnv 15 180 16 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X text 69 309 Output Section;
+#X obj 170 710 writesf~ 1;
+#X msg 184 556 stop;
+#X obj 170 585 t b b;
+#X obj 197 606 f 0;
+#X obj 226 606 + 1;
+#X obj 190 495 bng 15 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X msg 170 630 start;
+#X obj 190 521 bng 15 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X text 212 494 Start Recording;
+#X text 212 520 Stop Recording;
+#X msg 171 682 open -bytes 3 \$1;
+#X obj 195 659 makefilename sound%d.wav;
+#X msg 226 585 0;
+#X obj 548 443 * 10;
+#X connect 0 0 1 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 7 0 8 0;
+#X connect 7 0 36 0;
+#X connect 8 0 35 1;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 15 0 16 0;
+#X connect 15 0 17 0;
+#X connect 18 0 20 0;
+#X connect 18 0 6 0;
+#X connect 19 0 21 0;
+#X connect 20 0 12 0;
+#X connect 20 0 2 0;
+#X connect 21 0 2 1;
+#X connect 21 0 9 0;
+#X connect 22 0 49 0;
+#X connect 23 0 49 0;
+#X connect 24 0 49 0;
+#X connect 25 0 24 1;
+#X connect 26 0 27 0;
+#X connect 27 0 25 0;
+#X connect 28 0 31 0;
+#X connect 28 0 32 0;
+#X connect 28 0 33 0;
+#X connect 29 0 30 0;
+#X connect 29 0 35 0;
+#X connect 30 0 28 0;
+#X connect 31 0 22 0;
+#X connect 32 0 23 0;
+#X connect 33 0 40 0;
+#X connect 34 0 31 0;
+#X connect 34 1 32 0;
+#X connect 34 2 33 0;
+#X connect 35 0 34 0;
+#X connect 36 0 29 0;
+#X connect 37 0 38 0;
+#X connect 37 0 39 0;
+#X connect 39 0 49 1;
+#X connect 40 0 24 0;
+#X connect 41 0 100 0;
+#X connect 41 0 99 0;
+#X connect 42 0 43 0;
+#X connect 43 0 157 0;
+#X connect 44 0 60 0;
+#X connect 45 0 96 0;
+#X connect 46 0 97 0;
+#X connect 47 0 80 0;
+#X connect 48 0 47 0;
+#X connect 49 0 41 0;
+#X connect 50 0 51 0;
+#X connect 51 0 49 2;
+#X connect 52 0 46 0;
+#X connect 53 0 56 0;
+#X connect 54 0 57 0;
+#X connect 54 0 58 0;
+#X connect 54 0 115 0;
+#X connect 56 0 44 0;
+#X connect 56 0 55 0;
+#X connect 57 0 56 1;
+#X connect 58 0 45 0;
+#X connect 59 0 62 0;
+#X connect 61 0 63 0;
+#X connect 63 0 59 0;
+#X connect 64 0 56 0;
+#X connect 65 0 56 0;
+#X connect 66 0 56 0;
+#X connect 67 0 56 0;
+#X connect 68 0 56 0;
+#X connect 69 0 56 0;
+#X connect 70 0 56 0;
+#X connect 71 0 56 0;
+#X connect 72 0 56 0;
+#X connect 73 0 56 0;
+#X connect 74 0 56 0;
+#X connect 75 0 93 0;
+#X connect 75 0 111 0;
+#X connect 76 0 77 0;
+#X connect 76 0 128 0;
+#X connect 77 0 75 0;
+#X connect 79 0 45 0;
+#X connect 80 0 45 0;
+#X connect 81 0 78 0;
+#X connect 82 0 78 0;
+#X connect 83 0 78 0;
+#X connect 84 0 78 0;
+#X connect 85 0 78 0;
+#X connect 86 0 78 0;
+#X connect 87 0 78 0;
+#X connect 88 0 78 0;
+#X connect 89 0 78 0;
+#X connect 90 0 78 0;
+#X connect 91 0 78 0;
+#X connect 92 0 78 0;
+#X connect 93 0 81 0;
+#X connect 93 1 82 0;
+#X connect 93 2 83 0;
+#X connect 93 3 84 0;
+#X connect 93 4 85 0;
+#X connect 93 5 86 0;
+#X connect 93 6 87 0;
+#X connect 93 7 88 0;
+#X connect 93 8 89 0;
+#X connect 93 9 90 0;
+#X connect 93 10 91 0;
+#X connect 93 11 92 0;
+#X connect 93 12 94 0;
+#X connect 94 0 78 0;
+#X connect 95 0 7 0;
+#X connect 95 0 126 0;
+#X connect 96 0 53 0;
+#X connect 96 1 64 0;
+#X connect 96 2 65 0;
+#X connect 96 3 66 0;
+#X connect 96 4 67 0;
+#X connect 96 5 68 0;
+#X connect 96 6 69 0;
+#X connect 96 7 70 0;
+#X connect 96 8 71 0;
+#X connect 96 9 72 0;
+#X connect 96 10 73 0;
+#X connect 96 11 74 0;
+#X connect 97 0 60 0;
+#X connect 98 0 75 0;
+#X connect 99 0 100 1;
+#X connect 99 1 100 0;
+#X connect 100 0 15 0;
+#X connect 101 0 102 0;
+#X connect 102 0 99 1;
+#X connect 103 0 104 0;
+#X connect 104 0 99 2;
+#X connect 105 0 106 0;
+#X connect 106 0 107 0;
+#X connect 107 0 99 3;
+#X connect 108 0 109 0;
+#X connect 109 0 99 4;
+#X connect 110 0 54 0;
+#X connect 111 0 112 0;
+#X connect 111 1 116 0;
+#X connect 112 0 113 0;
+#X connect 113 0 115 0;
+#X connect 114 0 110 0;
+#X connect 115 0 113 1;
+#X connect 115 0 114 0;
+#X connect 116 0 113 0;
+#X connect 117 0 15 1;
+#X connect 118 0 122 0;
+#X connect 119 0 123 0;
+#X connect 120 0 124 0;
+#X connect 121 0 125 0;
+#X connect 122 0 126 1;
+#X connect 123 0 126 2;
+#X connect 124 0 126 3;
+#X connect 125 0 131 1;
+#X connect 126 0 127 0;
+#X connect 127 0 117 0;
+#X connect 129 0 131 0;
+#X connect 130 0 117 0;
+#X connect 131 0 130 0;
+#X connect 145 0 144 0;
+#X connect 146 0 150 0;
+#X connect 146 1 147 0;
+#X connect 147 0 148 0;
+#X connect 147 0 155 0;
+#X connect 148 0 147 1;
+#X connect 149 0 146 0;
+#X connect 150 0 144 0;
+#X connect 151 0 145 0;
+#X connect 154 0 144 0;
+#X connect 155 0 154 0;
+#X connect 156 0 147 1;
+#X connect 157 0 41 1;
